@@ -30,7 +30,7 @@ https://www.bilibili.com/video/bv1RR4y1H7Wj
 
 ### 公式
 #### 密度约束
-$C_i(p_1, ..., p_n) = \frac{\rho_i}{\rho_0} - 1$
+$$C_i(p_1, ..., p_n) = \frac{\rho_i}{\rho_0} - 1$$
 $\rho_0$表示静止密度
 $\rho_i = \sum_jm_jW(p_i - p_j, h)$
 W表示核函数，h为核半径，$m_j$表示粒子质量，此处我们架设所有粒子质量相同，后面的公式中将省略
