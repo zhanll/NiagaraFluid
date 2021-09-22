@@ -14,19 +14,34 @@ https://www.bilibili.com/video/bv1RR4y1H7Wj
 ## 算法
 ### 伪代码
 1: for all particles i do
+
 2:	- apply gravity force $v_i$ ← $v_i$ + ∆tg
+
 3:	- integrate $x^∗_i$ ← $x_i$ + ∆t$v_i$
+
 4:	- find particle neighbors
+
 5:	- calculate $λ_i$
+
 6: end for
+
 7: for all particles i do
+
 8:	  - calculate $∆p_i$
+
 9:	  - update position $x^∗_i$ ← $x^∗_i$ + $∆p_i$
+
 10:	- handle boundary collisions
+
 11:	- apply XSPH viscosity
+
 12:	- update velocity $v_i$ ← $\frac{1}{∆t}$($x^∗_i$ − $x_i$)
+
 13:	- update position $x_i$ ← $x^∗_i$
+
 14: end for
+
+
 
 ### 公式
 #### 密度约束
