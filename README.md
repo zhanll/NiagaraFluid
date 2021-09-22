@@ -30,17 +30,17 @@ https://www.bilibili.com/video/bv1RR4y1H7Wj
 
 ### 公式
 #### 密度约束
-$C_i$($p_1$, ..., $p_n$) = $\frac{\rho_i}{\rho_0}$ - 1
+$C_i(p_1, ..., p_n) = \frac{\rho_i}{\rho_0} - 1$
 $\rho_0$表示静止密度
-$\rho_i$ = $\sum_jm_jW(p_i - p_j, h)$
+$\rho_i = \sum_jm_jW(p_i - p_j, h)$
 W表示核函数，h为核半径，$m_j$表示粒子质量，此处我们架设所有粒子质量相同，后面的公式中将省略
 $C(p + \Delta{p}) = 0$
 我们希望求得$\Delta p$使得上式成立
-$C(p + \Delta{p}) \approx C(p)$ + $\nabla{C^T}$$\nabla$C$\lambda$ + $\epsilon\lambda$
+$C(p + \Delta{p}) \approx C(p) + \nabla{C^T}\nabla C\lambda + \epsilon\lambda$
 $\Delta{p} \approx \nabla{C}\lambda$
-$\lambda_i$ = -$\frac{C_i(p_1, ..., p_n)}{\sum_k{\mid \nabla_{p_k}C_i \mid}^2 + \epsilon}$
+$\lambda_i = -\frac{C_i(p_1, ..., p_n)}{\sum_k{\mid \nabla_{p_k}C_i \mid}^2 + \epsilon}$
 要得$\Delta p$需要先求得$\lambda$，上式中$\epsilon$表示很小的实数，以防除零错误
-$\nabla_{p_k}{C_i}$ = $\frac{1}{\rho_0}$$\begin{cases}\sum_j \nabla_{p_k}W(p_i - p_j, h)& \text{k = j}\\-\nabla_{p_k}W(p_i - p_j, h)& \text{k = j}\end{cases}$
+$\nabla_{p_k}{C_i} = \frac{1}{\rho_0}\begin{cases}\sum_j \nabla_{p_k}W(p_i - p_j, h)& \text{k = j}\\-\nabla_{p_k}W(p_i - p_j, h)& \text{k = j}\end{cases}$
 当粒子为邻居时，计算其核函数的梯度；当为自身时，对所有邻居的梯度求和
 
 #### 核函数
