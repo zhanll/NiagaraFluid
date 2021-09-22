@@ -14,18 +14,18 @@ https://www.bilibili.com/video/bv1RR4y1H7Wj
 ## 算法
 ### 伪代码
 1: for all particles i do<br/>
-2:	- apply gravity force $v_i$ ← $v_i$ + ∆tg<br/>
-3:	- integrate $x^∗_i$ ← $x_i$ + ∆t$v_i$<br/>
-4:	- find particle neighbors<br/>
-5:	- calculate $λ_i$<br/>
+2:    - apply gravity force $v_i$ ← $v_i$ + ∆tg<br/>
+3:    - integrate $x^∗_i$ ← $x_i$ + ∆t$v_i$<br/>
+4:    - find particle neighbors<br/>
+5:    - calculate $λ_i$<br/>
 6: end for<br/>
 7: for all particles i do<br/>
-8:	  - calculate $∆p_i$<br/>
-9:	  - update position $x^∗_i$ ← $x^∗_i$ + $∆p_i$<br/>
-10:	- handle boundary collisions<br/>
-11:	- apply XSPH viscosity<br/>
-12:	- update velocity $v_i$ ← $\frac{1}{∆t}$($x^∗_i$ − $x_i$)<br/>
-13:	- update position $x_i$ ← $x^∗_i$<br/>
+8:    - calculate $∆p_i$<br/>
+9:    - update position $x^∗_i$ ← $x^∗_i$ + $∆p_i$<br/>
+10:  - handle boundary collisions<br/>
+11:  - apply XSPH viscosity<br/>
+12:  - update velocity $v_i$ ← $\frac{1}{∆t}$($x^∗_i$ − $x_i$)<br/>
+13:  - update position $x_i$ ← $x^∗_i$<br/>
 14: end for<br/>
 
 ### 公式
